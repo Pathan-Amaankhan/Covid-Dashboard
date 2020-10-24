@@ -1,0 +1,13 @@
+<mat-card class="panel-size text-white m-2 rounded-lg" style="background-color: #7395AE">
+  <mat-card-header class="justify-content-center">
+    <mat-card-title>{{ stName }}</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content class="text-center">
+    <div>confirmed: {{ confCases }}</div>
+    <div>active: {{ actCases }}</div>
+    <div>recovered: {{ recvCases }}</div>
+    <div *ngIf="deaths">deaths: {{ deaths }}</div>
+    <div *ngIf="!deaths">decreased: {{ decrease }}</div>
+  </mat-card-content>
+</mat-card>

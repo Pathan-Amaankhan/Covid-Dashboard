@@ -1,0 +1,6 @@
+#divChart1, #divChart2, #divChart3, #divChart4 {
+  position: relative;
+  height:50vh;
+  width:90vw;
+  padding-bottom: 6vh;
+}
