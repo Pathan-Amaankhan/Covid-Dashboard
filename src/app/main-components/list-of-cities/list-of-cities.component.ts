@@ -10,11 +10,13 @@ import {HttpClient} from '@angular/common/http';
 })
 export class ListOfCitiesComponent implements OnInit {
   cities;
+  stateName: string;
 
   constructor(private router: Router, private http: HttpClient) { }
 
   ngOnInit(): void {
     try {
+      this.stateName = history.state.data.stateName;
       this.http.get('https://api.covid19india.org/state_district_wise.json').subscribe(data => {
         this.cities = data[history.state.data.stateName].districtData;
       });

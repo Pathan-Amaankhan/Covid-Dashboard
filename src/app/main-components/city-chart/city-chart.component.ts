@@ -10,10 +10,12 @@ import {Chart} from 'node_modules/chart.js';
 export class CityChartComponent implements OnInit {
   chartIds = ['canvasChart1', 'canvasChart2', 'canvasChart3', 'canvasChart4'];
   chartTypes = ['bar', 'radar', 'doughnut', 'polarArea'];
+  cityName: string;
   constructor(private router: Router) { }
 
   ngOnInit(): void {
     try {
+      this.cityName = history.state.data.cityName;
       for (let i = 0; i < this.chartIds.length; i++) {
         // tslint:disable-next-line:no-unused-expression
         new Chart( this.chartIds[i], {
