@@ -3,7 +3,7 @@
   <canvas id="myChart"></canvas>
 </div>
 
-<div class="d-flex flex-wrap add-scrolling hide-scrollbar p-2">
+<div class="d-flex flex-wrap add-scrolling hide-scrollbar">
   <div class="flex-fill" *ngFor="let l of states; let indexOfState = index;">
     <app-display-card *ngIf="indexOfState>0 && indexOfState!=states.length-2"
                       (click)="gotToCities(states[indexOfState].state,

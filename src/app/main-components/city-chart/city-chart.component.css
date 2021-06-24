@@ -18,6 +18,8 @@
 }
 
 .add-scrolling {
+  border-radius: 1em;
+  margin: 0 calc(5vw - 5px);
   overflow-y: auto;
   overflow-x: hidden;
   height: 90vh;
