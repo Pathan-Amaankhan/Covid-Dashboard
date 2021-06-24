@@ -12,6 +12,7 @@ export class DisplayCardComponent implements OnInit {
   @Input('recovered-cases') recvCases: number;
   @Input('deaths') deaths;
   @Input('decreased') decrease;
+  @Input('backgroundColor') bgColor = '#7395AE';
   constructor() { }
 
   ngOnInit(): void {

@@ -1,8 +1,11 @@
 #divChart1, #divChart2, #divChart3, #divChart4 {
-  position: relative;
+  padding: 1em;
+  background-color: white;
   height:50vh;
   width:90vw;
-  padding-bottom: 6vh;
+  margin: 1.5em auto 1.5em auto;
+  border-radius: 1em;
+  box-shadow: 1px 1px 5px grey;
 }
 
 .hide-scrollbar {
